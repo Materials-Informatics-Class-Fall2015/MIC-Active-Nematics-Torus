@@ -1,5 +1,3 @@
-# PWE-Project-Page
-Repository for MSE8883 FA15 project page for perrywmellis
+#Project Pages
 
-
-This is a test for the first commit.
+Project Pages is Jekyll Template specifically geared towards collaborative science. For more information, click [here](http://matin-hub.github.io/ppguide/).
