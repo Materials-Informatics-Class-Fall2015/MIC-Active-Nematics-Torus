@@ -6,8 +6,8 @@ email: perrywmellis@users.noreply.github.com
 description: "Test test test"
 baseurl: "/PWE-Project-Page"
 url: "http://perrywmellis.github.io"
-github_username:  matin-hub
-project_repository: project-pages
+github_username:  perrywmellis
+project_repository: PWE-project-pages
 
 # Build settings
 # Don't change these variables
