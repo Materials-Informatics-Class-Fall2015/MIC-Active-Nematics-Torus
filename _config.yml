@@ -2,10 +2,10 @@
 
 title: Project Pages
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/project-pages"
-url: "http://matin-hub.github.io"
+email: perrywmellis@users.noreply.github.com
+description: "Test test test"
+baseurl: "/PWE-Project-Page"
+url: "http://perrywmellis.github.io"
 github_username:  matin-hub
 project_repository: project-pages
 
