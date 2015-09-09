@@ -10,7 +10,7 @@ tags: 		result
 
 
 # Nematic Materials
-Nematic materials consist of anisotropic units that share a preferred average alignment. For example, for a series of nematic rod-like units, they will prefer to align with their long axes pointing in roughly the same direction. We call this direction the director **n**, a bivector, as seen in the example in Figure 1A. Defects in nematic materials occur when the director is undefined. For nematics confined to a two-dimensional surface, the two most common defect structures are the $$s=+\frac{1}{2} and s=-\frac{1}{2}$$ defects, as seen in Figure 1B. 
+Nematic materials consist of anisotropic units that share a preferred average alignment. For example, for a series of nematic rod-like units, they will prefer to align with their long axes pointing in roughly the same direction. We call this direction the director **n**, a bivector, as seen in the example in Figure 1A. Defects in nematic materials occur when the director is undefined. For nematics confined to a two-dimensional surface, the two most common defect structures are the $$s=+\frac{1}{2}$$ and $$s=-\frac{1}{2}$$ defects, as seen in Figure 1B. 
 
 
 ![Figure1 - 2D nematics](../img/post1/blog1_fig1.png)
