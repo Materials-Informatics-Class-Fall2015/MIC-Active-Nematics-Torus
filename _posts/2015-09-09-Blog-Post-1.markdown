@@ -10,11 +10,13 @@ tags: 		result
 
 
 # Nematic Materials
-Nematic materials consist of anisotropic units that share a preferred average alignment. For example, for a series of nematic rod-like units, they will prefer to align with their long axes pointing in roughly the same direction. We call this direction the director **n**, a bivector, as seen in the example in Figure 1A. Defects in nematic materials occur when the director is undefined. For nematics confined to a two-dimensional surface, the two most common defect structures are the \(s=+\frac{1}{/2}\) and \(s=-\frac{1}{2}\) defects, as seen in Figure 1B. 
+Nematic materials consist of anisotropic units that share a preferred average alignment. For example, for a series of nematic rod-like units, they will prefer to align with their long axes pointing in roughly the same direction. We call this direction the director **n**, a bivector, as seen in the example in Figure 1A. Defects in nematic materials occur when the director is undefined. For nematics confined to a two-dimensional surface, the two most common defect structures are the $$s=+\frac{1}{/2}\) and \(s=-\frac{1}{2}$$ defects, as seen in Figure 1B. 
 
 
-![Figure1 - 2D nematics](../img/blog1_fig1.png)
-
+![Figure1 - 2D nematics](../img/post1/blog1_fig1.png)
+<p align="center"><font size="3"><font face="calibri">
+<b>Figure 1:</b> A, schematic showing nematic alignment and the director. B, schematics showing the director configurations for +1/2 (left, red dot) and -1/2 (right, blue dot) defects. C, snapshot of an active nematic with some +1/2 and -1/2 defects highlighted.<br>
+</p>
 
 While the most commonly known nematic materials are the equilibrium nematic liquid crystals used in liquid crystal displays (LCD), we are going to be analyzing data from an active nematic.  In this case, the individual units making up the material have a source of internal energy that can be converted into motion. This motion continuously drives the material out of equilibrium and creates a sea of defects. A snapshot of this material with some positive and negative defects highlighted can be seen in Figure 1C. The activity is responsible for creating the "sea" of defects in the image. A similar image for an equilibrium material might show the director primarily aligned along a single direction with perhaps only a few defects present.
 
@@ -58,13 +60,13 @@ While the properties of active nematics on a flat surface still have many intere
 	<tr>
 		<td width="100%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-			Figure 2: Left, video scanning through a z-stack. Right, video showing the data reconstructed from the z-stack.
+			<b>Figure 2:</b> Left, video scanning through a z-stack. Right, video showing the data reconstructed from the z-stack.<br>
 			</p>
 		</td>		
 	</tr>
 </table>
 
-# Goals of the project
+#Goals of the project
 As stated earlier, we are looking to see how the curvature of the surface affects the behavior of the active nematic. We have z-stack recorded over time of different active nematic toroids. An example video of a small portion of a torus is shown from below the torus in Figure 3. We want to locate all of the defects in all of the images such that we can  determine quantities like defect trajectories, defect lifetimes, defect orientations, defect velocities, etc. all a function of the local curvature.
 
 <!-- Here is a table with some videos-->
@@ -87,6 +89,9 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 		</td>							
 	</tr>
 </table>
+<p align="center"><font size="3"><font face="calibri">
+<b>Figure 3:</b> A short video showing the active nematic evloving with time. This is a small view of the tube of the torus from below the torus.<br>
+</p>
 
 By connecting the curvature to the behavior of the defects, we hope to shed insight onto how not only nematic materials react under confinement, but also how materials with other types of order interact with the curvature of the substrate.
 
