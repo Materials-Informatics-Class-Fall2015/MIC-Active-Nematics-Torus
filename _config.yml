@@ -1,9 +1,9 @@
 # Site settings
 
 title: Project Pages
-header-img: img/home-bg.jpg
+header-img: img/Active_header.jpg
 email: perrywmellis@users.noreply.github.com
-description: "Test test test"
+description: "Characterizing Active Nematics on the Surface of a Torus"
 baseurl: "/PWE-Project-Page"
 url: "http://perrywmellis.github.io"
 github_username:  perrywmellis
