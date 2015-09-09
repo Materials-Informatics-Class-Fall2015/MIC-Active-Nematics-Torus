@@ -29,12 +29,12 @@ While the properties of active nematics on a flat surface still have many intere
 	<tr>
 		<td width="50%" align="center">
 			<p	>
-			<b>V = z-stack</b>
+			<b>z-stack</b>
 			</p>
 		</td>				
 		<td width="50%" align="center">
 			<p>
-			<b>V = reconstructed image</b>
+			<b>reconstructed image</b>
 			</p>
 		</td>				
 	</tr>
@@ -74,7 +74,7 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 	<tr>
 		<td width="50%" align="center">
 			<p	>
-			<b>V = example data</b>
+			<b>example active nematic data</b>
 			</p>
 		</td>				
 				
