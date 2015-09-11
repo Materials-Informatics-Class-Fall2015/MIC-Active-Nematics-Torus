@@ -81,7 +81,7 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 	</tr>
 	<tr>
 		<td width="50%" align="center">
-			<video height=330 id="video" controls='controls'>
+			<video height="330" id="video" controls='controls'>
 				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.mp4" type="video/mp4"/>
 				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.webm" type="video/webm"/>
 				Your browser doesn't seem to support the video tag.
