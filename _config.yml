@@ -4,10 +4,10 @@ title: Project Pages
 header-img: img/Active_header.jpg
 email: perrywmellis@users.noreply.github.com
 description: "Characterizing Active Nematics on the Surface of a Torus"
-baseurl: "/PWE-Project-Page"
-url: "http://perrywmellis.github.io"
+baseurl: "/MIC-Active-Nematics-Torus"
+url: "http://Materials-Informatics-Class-Fall2015.github.io"
 github_username:  perrywmellis
-project_repository: PWE-Project-Page
+project_repository: MIC-Active-Nematics-Torus
 disqus_shortname: project-pages
 
 # Build settings
