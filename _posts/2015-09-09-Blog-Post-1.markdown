@@ -41,15 +41,15 @@ While the properties of active nematics on a flat surface still have many intere
 	<tr>
 		<td width="50%" align="center">
 			<video height=330 id="video" controls='controls'>
-				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.mp4" type="video/mp4"/>
-				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.webm" type="video/webm"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.webm" type="video/webm">
 				Your browser doesn't seem to support the video tag.
 			</video>
 		</td>				
 		<td width="50%" align="center">
 			<video height=330 id="video" controls='controls'>
-				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4"/>
-				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm">
 				Your browser doesn't seem to support the video tag.
 			</video>
 		</td>				
