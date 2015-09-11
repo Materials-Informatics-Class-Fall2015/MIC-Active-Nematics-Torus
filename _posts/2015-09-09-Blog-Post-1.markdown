@@ -13,7 +13,7 @@ tags: 		result
 Nematic materials consist of anisotropic units that share a preferred average alignment. For example, for a series of nematic rod-like units, they will prefer to align with their long axes pointing in roughly the same direction. We call this direction the director **n**, a bivector, as seen in the example in Figure 1A. Defects in nematic materials occur when the director is undefined. For nematics confined to a two-dimensional surface, the two most common defect structures are the $$s=+\frac{1}{2}$$ and $$s=-\frac{1}{2}$$ defects, as seen in Figure 1B. 
 
 
-![Figure1 - 2D nematics](../img/post1/blog1_fig1.png)
+![Figure1 - 2D nematics](/MIC-Active-Nematics-Torus/img/post1/blog1_fig1.png)
 <p align="center"><font size="3"><font face="calibri">
 <b>Figure 1:</b> A, schematic showing nematic alignment and the director. B, schematics showing the director configurations for +1/2 (left, red dot) and -1/2 (right, blue dot) defects. C, snapshot of an active nematic with some +1/2 and -1/2 defects highlighted.<br>
 </p>
@@ -41,15 +41,15 @@ While the properties of active nematics on a flat surface still have many intere
 	<tr>
 		<td width="50%" align="center">
 			<video height=330 id="video" controls='controls'>
-				<source src="../img/post1/zstack_scan.mp4" type="video/mp4"/>
-				<source src="../img/post1/zstack_scan.webm" type="video/webm"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.mp4" type="video/mp4"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.webm" type="video/webm"/>
 				Your browser doesn't seem to support the video tag.
 			</video>
 		</td>				
 		<td width="50%" align="center">
 			<video height=330 id="video" controls='controls'>
-				<source src="../img/post1/surface_reorient.mp4" type="video/mp4"/>
-				<source src="../img/post1/surface_reorient.webm" type="video/webm"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm"/>
 				Your browser doesn't seem to support the video tag.
 			</video>
 		</td>				
@@ -82,8 +82,8 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 	<tr>
 		<td width="50%" align="center">
 			<video height=330 id="video" controls='controls'>
-				<source src="../img/post1/tube_vid.mp4" type="video/mp4"/>
-				<source src="../img/post1/tube_vid.webm" type="video/webm"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.mp4" type="video/mp4"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.webm" type="video/webm"/>
 				Your browser doesn't seem to support the video tag.
 			</video>
 		</td>							
