@@ -14,6 +14,7 @@ Nematic materials consist of anisotropic units that share a preferred average al
 
 
 ![Figure1 - 2D nematics](/MIC-Active-Nematics-Torus/img/post1/blog1_fig1.png)
+
 <p align="center"><font size="3"><font face="calibri">
 <b>Figure 1:</b> A, schematic showing nematic alignment and the director. B, schematics showing the director configurations for +1/2 (left, red dot) and -1/2 (right, blue dot) defects. C, snapshot of an active nematic with some +1/2 and -1/2 defects highlighted.</font></font></p><br>
 
