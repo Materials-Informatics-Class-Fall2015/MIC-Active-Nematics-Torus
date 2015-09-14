@@ -15,8 +15,8 @@ Nematic materials consist of anisotropic units that share a preferred average al
 
 ![Figure1 - 2D nematics](/MIC-Active-Nematics-Torus/img/post1/blog1_fig1.png)
 <p align="center"><font size="3"><font face="calibri">
-<b>Figure 1:</b> A, schematic showing nematic alignment and the director. B, schematics showing the director configurations for +1/2 (left, red dot) and -1/2 (right, blue dot) defects. C, snapshot of an active nematic with some +1/2 and -1/2 defects highlighted.<br>
-</p>
+<b>Figure 1:</b> A, schematic showing nematic alignment and the director. B, schematics showing the director configurations for +1/2 (left, red dot) and -1/2 (right, blue dot) defects. C, snapshot of an active nematic with some +1/2 and -1/2 defects highlighted.</font></font></p><br>
+
 
 While the most commonly known nematic materials are the equilibrium nematic liquid crystals used in liquid crystal displays (LCD), we are going to be analyzing data from an active nematic.  In this case, the individual units making up the material have a source of internal energy that can be converted into motion. This motion continuously drives the material out of equilibrium and creates a sea of defects. A snapshot of this material with some positive and negative defects highlighted can be seen in Figure 1C. The activity is responsible for creating the "sea" of defects in the image. A similar image for an equilibrium material might show the director primarily aligned along a single direction with perhaps only a few defects present.
 
@@ -90,7 +90,7 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 	</tr>
 </table>
 <p align="center"><font size="3"><font face="calibri">
-<b>Figure 3:</b> A short video showing the active nematic evloving with time. This is a small view of the tube of the torus from below the torus.<br>
+<b>Figure 3:</b> A short video showing the active nematic evloving with time. This is a small view of the tube of the torus from below the torus.<br></font></font>
 </p>
 
 By connecting the curvature to the behavior of the defects, we hope to shed insight onto how not only nematic materials react under confinement, but also how materials with other types of order interact with the curvature of the substrate.
