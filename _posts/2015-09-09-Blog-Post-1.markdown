@@ -65,7 +65,7 @@ While the properties of active nematics on a flat surface still have many intere
 			</p>
 		</td>		
 	</tr>
-</table>
+</table><br>
 
 # Goals of the project
 As stated earlier, we are looking to see how the curvature of the surface affects the behavior of the active nematic. We have z-stack recorded over time of different active nematic toroids. An example video of a small portion of a torus is shown from below the torus in Figure 3. We want to locate all of the defects in all of the images such that we can  determine quantities like defect trajectories, defect lifetimes, defect orientations, defect velocities, etc. all a function of the local curvature.
@@ -92,7 +92,7 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 </table>
 <p align="center"><font size="3"><font face="calibri">
 <b>Figure 3:</b> A short video showing the active nematic evloving with time. This is a small view of the tube of the torus from below the torus.<br></font></font>
-</p>
+</p><br>
 
 By connecting the curvature to the behavior of the defects, we hope to shed insight onto how not only nematic materials react under confinement, but also how materials with other types of order interact with the curvature of the substrate.
 
