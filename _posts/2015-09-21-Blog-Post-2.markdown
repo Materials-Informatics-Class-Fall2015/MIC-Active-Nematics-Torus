@@ -7,7 +7,8 @@ tags:
 ---
 <!-- Start Writing Below in Markdown -->
 
-
+# What do we have?
+As a reminder, we have a an active nematic material on the surface of a torus. This means our nematic lives on a two dimensional curved surface embedded in a three-dimesional space. An example confocal dataset of the nematic on a torus surface can be seen in the video in Figure 1. The video rotates the dataset to show the shape of the surface. For each nematic torus, we have a time series of the these datasets allowing us to look at the time evolution of the nematic.
 
 
 <!-- Here is a table with some videos-->
@@ -34,6 +35,18 @@ tags:
 <b>Figure 1:</b> A an example confocal dataset of an active nematic on the surface of a torus. The video rotates the dataset to give perspective on the surface.<br></font></font>
 </p>
 
+
+# What do we want?
+For this project, we are going to treat variables like the curvature of the substrate, the activity of the material, the size of the torus, etc., as **processes** that potentially have an impact on the **structure** of the nematic. In this context, we are looking for a **process-structure relationship**.
+
+# The microstructure function
+Since we are dealing with a nematic material, we need a function that can characterize not only the director "**n**", but also the degree of alignment "S."  As mentioned in the Project Introduction, the director is a bivector that characterizes the local average orientation of the nematogens and can take values from [0,180) degrees.  If "**n**" can be seen as the mean of an orientation distribution, "S" can be thought of as the width of that distribution. It characterizes how well the individual molecules align along "**n**". These two quantities are encapsulated in the nematic order parameter "***Q***", a traceless, symmetric rank 2 tensor defined in 3 dimensions as:
+$$
+\mathit{Q}_{ij} = S \left ( n_i n_j-\frac{1}{3}\delta_{ij}\right ) = \left \langle u_i^{\alpha} u_j^{\alpha}-\frac{1}{3}\delta_{ij} \right \rangle_{\alpha},
+$$
+where \(\mathbf{u} \) is the orientation of an individual nematogen and the ensemble average is carried out over a local region. We will use ***Q*** as our microstructure function. Thus, if we can find the orientation of our nematic everywhere on the surface, we can compute ***Q***, obtaining our microstructure function.
+
+This leads to the next question: how do I get the nematic orientation from my data?
 
 
 
