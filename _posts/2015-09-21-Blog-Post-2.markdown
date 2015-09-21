@@ -1,0 +1,42 @@
+---
+layout:     post
+title:      Update 1: defining the microstructure function
+date:       2015-09-21 12:00:00
+author:     Perry Ellis
+tags: 	
+---
+<!-- Start Writing Below in Markdown -->
+
+
+
+
+<!-- Here is a table with some videos-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>active nematic on a the surface of a torus</b>
+			</p>
+		</td>				
+				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm">
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>							
+	</tr>
+</table>
+<p align="center"><font size="3"><font face="calibri">
+<b>Figure 1:</b> A an example confocal dataset of an active nematic on the surface of a torus. The video rotates the dataset to give perspective on the surface.<br></font></font>
+</p>
+
+
+
+
+
+
+
