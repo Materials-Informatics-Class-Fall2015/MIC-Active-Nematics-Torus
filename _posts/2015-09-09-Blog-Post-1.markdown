@@ -67,7 +67,9 @@ While the properties of active nematics on a flat surface still have many intere
 			</p>
 		</td>		
 	</tr>
-</table><br>
+</table>
+
+<br>
 
 # Goals of the project
 
