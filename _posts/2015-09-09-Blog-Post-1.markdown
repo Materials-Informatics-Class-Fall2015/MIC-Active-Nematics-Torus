@@ -91,10 +91,10 @@ As stated earlier, we are looking to see how the curvature of the surface affect
 	</tr>
 </table>
 <p align="center"><font size="3"><font face="calibri">
-<b>Figure 3:</b> A short video showing the active nematic evloving with time. This is a small view of the tube of the torus from below the torus.<br></font></font>
+<b>Figure 3:</b> A short video showing the active nematic evolving with time. This is a small view of the tube of the torus from below the torus.<br></font></font>
 </p><br>
 
-By connecting the curvature to the behavior of the defects, we hope to shed insight onto how not only nematic materials react under confinement, but also how materials with other types of order interact with the curvature of the substrate.
+By connecting the curvature to the behavior of the defects, we hope to gain insight onto how not only nematic materials react under confinement, but also how materials with other types of order interact with the curvature of the substrate.
 
 
 
