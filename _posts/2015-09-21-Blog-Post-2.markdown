@@ -1,10 +1,11 @@
 ---
 layout:     post
-title:      Update 1: defining the microstructure function
+title:      Update 1 - Defining the microstructure function
 date:       2015-09-21 12:00:00
 author:     Perry Ellis
 tags: 	
 ---
+
 <!-- Start Writing Below in Markdown -->
 
 # What do we have?
