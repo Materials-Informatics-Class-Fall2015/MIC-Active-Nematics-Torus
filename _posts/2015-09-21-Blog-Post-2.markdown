@@ -45,7 +45,7 @@ Since we are dealing with a nematic material, we need a function that can charac
 $$
 \mathit{Q}_{ij} = S \left ( n_i n_j-\frac{1}{3}\delta_{ij}\right ) = \left \langle u_i^{\alpha} u_j^{\alpha}-\frac{1}{3}\delta_{ij} \right \rangle_{\alpha},
 $$
-where \(\mathbf{u} \) is the orientation of an individual nematogen and the ensemble average is carried out over a local region. We will use ***Q*** as our microstructure function. Thus, if we can find the orientation of our nematic everywhere on the surface, we can compute ***Q***, obtaining our microstructure function.
+where **u** is the orientation of an individual nematogen and the ensemble average is carried out over a local region. We will use ***Q*** as our microstructure function. Thus, if we can find the orientation of our nematic everywhere on the surface, we can compute ***Q***, obtaining our microstructure function.
 
 This leads to the next question: how do I get the nematic orientation from my data?
 
