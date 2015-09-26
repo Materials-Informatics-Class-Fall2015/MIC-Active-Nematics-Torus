@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Update 2 - Presentation redux
-date:       2015-09-21 12:00:00
+date:       2015-09-25 12:00:00
 author:     Perry Ellis
 tags: 	
 ---
@@ -21,7 +21,7 @@ We are looking at active nematics on the surface of a torus becuase the torus gi
 ## How do we analyze the data
 In the last post, I determined that the microstructure function is the nematic order paramter, ***Q***, a symmetric traceless rank-2 tensor.  As a brief aside, we use a rank-2 tensor due to the head-tail symmetry of the nematic structure. If we tried to define a vector (rank-1 tensor) for the nematic, we would always find that the vector was 0. 
 
-To determine ***Q*** everywhere in our data, we first use a technique called "Coherence-enhanced diffusion filtering." The basic idea is to make an averaged rank-2 tensor from the gradient of the image intensity. This gives us a good idea of the local orientation everywhere in the image. We then average over thse local orientations to find ***Q***. An example analysis showing the workflow with a brief explanation of each stage in the process can be found below.
+To determine ***Q*** everywhere in our data, we first use a technique called "Coherence-enhanced diffusion filtering." The basic idea is to make an averaged rank-2 tensor from the gradient of the image intensity. This gives us a good idea of the local orientation everywhere in the image. We then average over thse local orientations to find ***Q***. An example analysis showing how we move from the raw data to the microstructure function is below.
 
 
 
@@ -31,24 +31,32 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>
 		<td width="50%" align="center">
 			<p	>
-			<b>active nematic on a the surface of a torus</b>
+			<b>z-stack</b>
 			</p>
 		</td>				
-				
+		<td width="50%" align="center">
+			<p>
+			<b>maximum intensity projection</b>
+			</p>
+		</td>				
 	</tr>
 	<tr>
 		<td width="50%" align="center">
 			<video height="330" id="video" controls='controls'>
-				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4">
-				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.webm" type="video/webm">
 				Your browser doesn't seem to support the video tag.
 			</video>
-		</td>							
+		</td>				
+		<td width="50%" align="center">
+			<p align="center"><font size="3"><font face="calibri">
+				<img src="../img/post3/MAX_D3_0001.jpg" height=330  />	
+			</p>
+		</td>				
 	</tr>
 </table>
-<p align="center"><font size="3"><font face="calibri">
-<b>Figure 1:</b> A an example confocal dataset of an active nematic on the surface of a torus. The video rotates the dataset to give perspective on the surface.<br></font></font>
-</p>
+ 1. First, we take our 3D (x,y,z) array of data and project it to a 2D (x,y) array by only keeping the maximum intensity along z for each (x,y) coordinate. Above, a video scanning through the 3D array along z is seen on the left and the maximum intensity projection for a portion of the torus is seen on the right.
+
 
 
 # What do we want?
