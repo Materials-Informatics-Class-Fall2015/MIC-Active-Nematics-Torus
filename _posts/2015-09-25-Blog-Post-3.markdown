@@ -19,9 +19,9 @@ The active nematic material we are working with is a *soft* material. This impli
 We are looking at active nematics on the surface of a torus becuase the torus gives us an opportunity to examine the effect of changing curvature.  Unlike a sphere, the curvature on the surface of a torus changes depending on the location. For example, a torus will always have a smoothly varying Gaussian curvature between its maxmimum along the outer ring and its minimum along the inner ring. In addition, the maximum Gaussian curvature is always positive and the minimum Gaussian curvature is always negative.
 
 ## How do we analyze the data
-In the last post, I determined that the microstructure function is the nematic order paramter, ***Q***, a symmetric traceless rank-2 tensor.  As a brief aside, we use a rank-2 tensor due to the head-tail symmetry of the nematic structure. If we tried to define a vector (rank-1 tensor) for the nematic, we would always find that the vector was 0. 
+In the last post, I chose the nematic order paramter, ***Q***, a symmetric traceless rank-2 tensor, as the microstructure function.  As a brief aside, we use a rank-2 tensor due to the head-tail symmetry of the nematic structure. If we tried to define a vector (rank-1 tensor) for the nematic, we would always find that the vector was 0. 
 
-To determine ***Q*** everywhere in our data, we first use a technique called "Coherence-enhanced diffusion filtering." The basic idea is to make an averaged rank-2 tensor from the gradient of the image intensity. This gives us a good idea of the local orientation everywhere in the image. We then average over thse local orientations to find ***Q***. An example analysis showing how we move from the raw data to the microstructure function is below.
+To determine ***Q*** everywhere in our data, we first use a technique called "Coherence-enhanced diffusion filtering." The basic idea behind this technigue is to make an averaged rank-2 tensor from the gradient of the image intensity. From this "structure tensor", we get the local orientation everywhere in the image. We then average over this local orientation to find ***Q***. An example analysis showing how we move from the raw data to the microstructure function is below.
 
 
 
@@ -55,21 +55,20 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 		</td>				
 	</tr>
 </table>
+
+
  1. First, we take our 3D (x,y,z) array of data and project it to a 2D (x,y) array by only keeping the maximum intensity along z for each (x,y) coordinate. Above, a video scanning through the 3D array along z is seen on the left and the maximum intensity projection for a portion of the torus is seen on the right.
+ 
+ 2. We filter the maximum intensity projection with a Gaussian filter to denoise the image. Then, we take the gradient of the denoised image and construct a symmetric tensor using the outer product of the gradient with itself.
+ 
+ 3. To get the structure tensor we componentwise average the gradient tensor using a Gaussian filter.  The standard deviation of this Gaussian filter should be about the size of the nematic features we want to characterize. The local orientation at every point is given by the eiqenvector associated with the smallest eigenvalue of the structure tensor at that point.
+ 
+ 4. Lastly, we average over this local orientation using a median disk filter to find ***Q*** for every point. We represent ***Q*** using two quantities, the director "**n**" and the degree of alignment "S". Now that we have a digital representation of our microstructure from our raw data, we next need to contruct the project workflow.
 
 
 
-# What do we want?
-For this project, we are going to treat variables like the curvature of the substrate, the activity of the material, the size of the torus, etc., as **processes** that potentially have an impact on the **structure** of the nematic. In this context, we are looking for a **process-structure relationship**.
 
-# The microstructure function
-Since we are dealing with a nematic material, we need a function that can characterize not only the director "**n**", but also the degree of alignment "S."  As mentioned in the Project Introduction, the director is a bivector that characterizes the local average orientation of the nematogens and can take values from [0,180) degrees.  If "**n**" can be seen as the mean of an orientation distribution, "S" can be thought of as the width of that distribution. It characterizes how well the individual molecules align along "**n**". These two quantities are encapsulated in the nematic order parameter "***Q***", a traceless, symmetric rank 2 tensor defined in 3 dimensions as:
-$$
-\mathit{Q}_{ij} = S \left ( n_i n_j-\frac{1}{3}\delta_{ij}\right ) = \left \langle u_i^{\alpha} u_j^{\alpha}-\frac{1}{3}\delta_{ij} \right \rangle_{\alpha},
-$$
-where **u** is the orientation of an individual nematogen and the ensemble average is carried out over a local region. We will use ***Q*** as our microstructure function. Thus, if we can find the orientation of our nematic everywhere on the surface, we can compute ***Q***, obtaining our microstructure function.
 
-This leads to the next question: how do I get the nematic orientation from my data?
 
 
 
