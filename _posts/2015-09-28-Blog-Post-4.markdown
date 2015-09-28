@@ -1,0 +1,21 @@
+---
+layout:     post
+title:      Update 3 - Workflow
+date:       2015-09-28 12:00:00
+author:     Perry Ellis
+tags: 	
+---
+
+<!-- Start Writing Below in Markdown -->
+
+# Workflow version 1
+Given that we can take each dataset and get a representation of our microstructure everywhere, let's start from there and look at the workflow for the remainder of the project.  While this will undoubtedly change throughout the semester, here's a graphic that shows where we are currently.
+
+
+
+
+
+
+
+
+
