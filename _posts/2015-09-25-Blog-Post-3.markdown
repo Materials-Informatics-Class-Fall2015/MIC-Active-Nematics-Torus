@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Update 2 - Presentation redux
+title:      Update 2 - Presentation 1 redux
 date:       2015-09-25 12:00:00
 author:     Perry Ellis
 tags: 	
@@ -26,7 +26,7 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 
 
 
-<!-- Here is a table with some videos-->
+<!-- Here is a table with some video and a picture-->
 <table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
 	<tr>
 		<td width="50%" align="center">
@@ -59,9 +59,83 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 
  1. First, we take our 3D (x,y,z) array of data and project it to a 2D (x,y) array by only keeping the maximum intensity along z for each (x,y) coordinate. Above, a video scanning through the 3D array along z is seen on the left and the maximum intensity projection for a portion of the torus is seen on the right.
  
- 2. We filter the maximum intensity projection with a Gaussian filter to denoise the image. Then, we take the gradient of the denoised image and construct a symmetric tensor using the outer product of the gradient with itself.
+ <!-- Here is a table with some pictures-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>gaussian-filtered image</b>
+			</p>
+		</td>				
+		<td width="50%" align="center">
+			<p>
+			<b>gradient orientation on the intervel [0 (black),180 (white)] degrees</b>
+			</p>
+		</td>				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<p align="center"><font size="3"><font face="calibri">
+				<img src="../img/post3/im_Gauss.png" height=330  />	
+			</p>
+		</td>				
+		<td width="50%" align="center">
+			<p align="center"><font size="3"><font face="calibri">
+				<img src="../img/post3/im_Grad.png" height=330  />	
+			</p>
+		</td>				
+	</tr>
+</table>
+ 
+ 2. We filter the maximum intensity projection with a Gaussian filter to denoise the image, as seen above on the right. Then, we take the gradient of the denoised image and construct a symmetric tensor using the outer product of the gradient with itself. The orientation of the gradient folded over the interval [0 (black),180 (white)] degrees can be seen above on the right.  The orientation is measured CCW off of the horizontal.
+ 
+ <!-- Here is a table a picture-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>local orientation on the intervel [0 (black),180 (white)] degrees</b>
+			</p>
+		</td>					
+	</tr>
+	<tr>			
+		<td width="50%" align="center">
+			<p align="center"><font size="3"><font face="calibri">
+				<img src="../img/post3/im_St.png" height=330  />	
+			</p>
+		</td>				
+	</tr>
+</table>
  
  3. To get the structure tensor we componentwise average the gradient tensor using a Gaussian filter.  The standard deviation of this Gaussian filter should be about the size of the nematic features we want to characterize. The local orientation at every point is given by the eiqenvector associated with the smallest eigenvalue of the structure tensor at that point.
+ 
+ <!-- Here is a table with some pictures-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>director orientation on the intervel [0 (black),180 (white)] degrees</b>
+			</p>
+		</td>				
+		<td width="50%" align="center">
+			<p>
+			<b> S on the intervel [0 (black),1 (white)] degrees</b>
+			</p>
+		</td>				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<p align="center"><font size="3"><font face="calibri">
+				<img src="../img/post3/im_Dir.png" height=330  />	
+			</p>
+		</td>				
+		<td width="50%" align="center">
+			<p align="center"><font size="3"><font face="calibri">
+				<img src="../img/post3/im_S.png" height=330  />	
+			</p>
+		</td>				
+	</tr>
+</table>
  
  4. Lastly, we average over this local orientation using a median disk filter to find ***Q*** for every point. We represent ***Q*** using two quantities, the director "**n**" and the degree of alignment "S". Now that we have a digital representation of our microstructure from our raw data, we next need to contruct the project workflow.
 
