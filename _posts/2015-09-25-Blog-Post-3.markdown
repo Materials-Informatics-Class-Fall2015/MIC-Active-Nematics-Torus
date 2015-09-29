@@ -18,7 +18,7 @@ The active nematic material we are working with is a *soft* material. This impli
 
 We are looking at active nematics on the surface of a torus becuase the torus gives us an opportunity to examine the effect of changing curvature.  Unlike a sphere, the curvature on the surface of a torus changes depending on the location. For example, a torus will always have a smoothly varying Gaussian curvature between its maxmimum along the outer ring and its minimum along the inner ring. In addition, the maximum Gaussian curvature is always positive and the minimum Gaussian curvature is always negative.
 
-## How do we process the data
+## How do we process the data?
 In the last post, I chose the nematic order paramter, ***Q***, a symmetric traceless rank-2 tensor, as the microstructure function.  As a brief aside, we use a rank-2 tensor due to the head-tail symmetry of the nematic structure. If we tried to define a vector (rank-1 tensor) for the nematic, we would always find that the vector was 0. 
 
 To determine ***Q*** everywhere in our data, we first use a technique called "Coherence-enhanced diffusion filtering." The basic idea behind this technigue is to make an averaged rank-2 tensor from the gradient of the image intensity. From this "structure tensor", we get the local orientation everywhere in the image. We then average over this local orientation to find ***Q***. An example analysis showing how we move from the raw data to the microstructure function is below.
