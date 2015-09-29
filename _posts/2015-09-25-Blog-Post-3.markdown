@@ -50,7 +50,7 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 		</td>				
 		<td width="50%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-				<img src="../img/post3/MAX_D3_0001.jpg" height=330>	
+				<img src="/MIC-Active-Nematics-Torus/img/post3/MAX_D3_0001.jpg" height=330>	
 			</p>
 		</td>				
 	</tr>
