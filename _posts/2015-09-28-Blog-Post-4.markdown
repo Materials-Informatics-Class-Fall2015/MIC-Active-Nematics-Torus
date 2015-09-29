@@ -11,7 +11,7 @@ tags:
 # Workflow version 1
 Given that we can take each dataset and get a representation of our microstructure everywhere, let's start from there and look at the workflow for the remainder of the project.  While this will undoubtedly change throughout the semester, here's a graphic that shows where we are currently.
 
-![preliminary workflow](/MIC-Active-Nematics-Torus/img/post4/workflow.PNG)
+![preliminary workflow](/MIC-Active-Nematics-Torus/img/post4/workflow.png)
 
 
 
