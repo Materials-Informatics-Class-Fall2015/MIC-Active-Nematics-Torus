@@ -87,7 +87,7 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	</tr>
 </table>
  
- 2. We filter the maximum intensity projection with a Gaussian filter to denoise the image, as seen above on the right. Then, we take the gradient of the denoised image and construct a symmetric tensor using the outer product of the gradient with itself. The orientation of the gradient folded over the interval [0 (black),180 (white)] degrees can be seen above on the right.  The orientation is measured CCW off of the horizontal.
+ 2. We filter the maximum intensity projection with a Gaussian filter to denoise the image, as seen in the example above on the left. Then, we take the gradient of the denoised image and construct a symmetric tensor using the outer product of the gradient with itself. The orientation of the gradient folded over the interval [0 (black),180 (white)] degrees can be seen for the example above on the right.  The orientation is measured CCW off of the horizontal.
  
  <!-- Here is a table a picture-->
 <table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
@@ -107,7 +107,7 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	</tr>
 </table>
  
- 3. To get the structure tensor we componentwise average the gradient tensor using a Gaussian filter.  The standard deviation of this Gaussian filter should be about the size of the nematic features we want to characterize. The local orientation at every point is given by the eiqenvector associated with the smallest eigenvalue of the structure tensor at that point.
+ 3. To get the structure tensor we componentwise average the gradient tensor using a Gaussian filter.  The standard deviation of this Gaussian filter should be about the size of the nematic features we want to characterize. The local orientation at every point is given by the eiqenvector associated with the smallest eigenvalue of the structure tensor at that point. An example local orientation image on the interval [0 (black),180 (white)] degrees measured CCW off of the horizontal can be seen above.
  
  <!-- Here is a table with some pictures-->
 <table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
@@ -137,7 +137,9 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	</tr>
 </table>
  
- 4. Lastly, we average over this local orientation using a median disk filter to find ***Q*** for every point. We represent ***Q*** using two quantities, the director "**n**" and the degree of alignment "S". Now that we have a digital representation of our microstructure from our raw data, we next need to contruct the project workflow.
+ 4. Lastly, we average over this local orientation using a median disk filter to find ***Q*** for every point. We represent ***Q*** using two quantities, the director "**n**" and the degree of alignment "S". These can be seen above for example analysis on the left and the right, respectively.  The director oriention is displayed on the interval [0 (black),180 (white)] degrees measured CCW with respect to the horizontal. 
+ 
+ This gives us a digital representation of our microstructure from our raw data,. Now that we have something to work with, we can construct the workflow for the remainder of the project...
 
 
 
