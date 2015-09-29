@@ -105,11 +105,11 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 
  3. To get the structure tensor we componentwise average the gradient tensor using a Gaussian filter.  The standard deviation of this Gaussian filter should be about the size of the nematic features we want to characterize. The local orientation at every point is given by the eiqenvector associated with the smallest eigenvalue of the structure tensor at that point. An example local orientation image on the interval [0 (black),180 (white)] degrees measured CCW off of the horizontal can be seen above.
 
- <!-- Here is a table with some pictures-->
-<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+<!-- Here is a table with some pictures-->
+<table>
 	<tr>
 		<td width="50%" align="center">
-			<p	>
+			<p>
 			<b>director orientation on the intervel [0 (black),180 (white)] degrees</b>
 			</p>
 		</td>				
@@ -122,12 +122,12 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_Dir.PNG" height="330" >	
+				<img src="../img/post3/im_Dir.PNG" height="330">	
 			</p>
 		</td>				
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_S.PNG" height="330" >	
+				<img src="../img/post3/im_S.PNG" height="330">	
 			</p>
 		</td>				
 	</tr>
