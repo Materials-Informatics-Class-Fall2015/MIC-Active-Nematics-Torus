@@ -70,12 +70,12 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_Gauss.PNG" height="330">	
+				<img src="/MIC-Active-Nematics-Torus/img/post3/im_Gauss.PNG" height="330">	
 			</p>
 		</td>				
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_Grad.PNG" height="330">	
+				<img src="/MIC-Active-Nematics-Torus/img/post3/im_Grad.PNG" height="330">	
 			</p>
 		</td>				
 	</tr>
@@ -97,7 +97,7 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>			
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_St.PNG" height="330">	
+				<img src="/MIC-Active-Nematics-Torus/img/post3/im_St.PNG" height="330">	
 			</p>
 		</td>				
 	</tr>
@@ -122,12 +122,12 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_Dir.PNG" height="330">	
+				<img src="/MIC-Active-Nematics-Torus/img/post3/im_Dir.PNG" height="330">	
 			</p>
 		</td>				
 		<td width="50%" align="center">
 			<p align="center">
-				<img src="../img/post3/im_S.PNG" height="330">	
+				<img src="/MIC-Active-Nematics-Torus/img/post3/im_S.PNG" height="330">	
 			</p>
 		</td>				
 	</tr>
