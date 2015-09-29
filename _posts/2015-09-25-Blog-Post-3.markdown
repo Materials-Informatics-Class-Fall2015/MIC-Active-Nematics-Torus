@@ -76,12 +76,12 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>
 		<td width="50%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-				<img src="../img/post3/im_Gauss.png" height=330  />	
+				<img src="../img/post3/im_Gauss.PNG" height=330  />	
 			</p>
 		</td>				
 		<td width="50%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-				<img src="../img/post3/im_Grad.png" height=330  />	
+				<img src="../img/post3/im_Grad.PNG" height=330  />	
 			</p>
 		</td>				
 	</tr>
@@ -101,7 +101,7 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>			
 		<td width="50%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-				<img src="../img/post3/im_St.png" height=330  />	
+				<img src="../img/post3/im_St.PNG" height=330  />	
 			</p>
 		</td>				
 	</tr>
@@ -126,12 +126,12 @@ To determine ***Q*** everywhere in our data, we first use a technique called "Co
 	<tr>
 		<td width="50%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-				<img src="../img/post3/im_Dir.png" height=330  />	
+				<img src="../img/post3/im_Dir.PNG" height=330  />	
 			</p>
 		</td>				
 		<td width="50%" align="center">
 			<p align="center"><font size="3"><font face="calibri">
-				<img src="../img/post3/im_S.png" height=330  />	
+				<img src="../img/post3/im_S.PNG" height=330  />	
 			</p>
 		</td>				
 	</tr>
