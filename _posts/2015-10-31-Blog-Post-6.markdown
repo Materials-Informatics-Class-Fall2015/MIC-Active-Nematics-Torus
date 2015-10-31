@@ -33,15 +33,28 @@ Since the px width of the bins can be small for some of the really negative Gaus
 
 # Example stats
 
-Below are some example stats for **n** represented using a Fourier basis.  Even though I'm ostensibly showing the constant component term, note the "bands" in the statistics.  This means that something went wrong at some point. David Brough is looking into this farther and we hope to have it resolved soon. 
+Below are some example stats for **n** represented using a Fourier basis.  Even though I'm ostensibly showing the constant component term on the far left, note the "bands" in the statistics.  This could means that something went wrong at some point as the bands can be a signiture of a machine error. David Brough is looking into this farther and we hope to have it resolved soon. 
 
-![Example statistics. These are the constant components of the Fourier representations](/MIC-Active-Nematics-Torus/img/post5/Final.png) 
+![Example statistics](/MIC-Active-Nematics-Torus/img/post6/Stats_1.png) 
 
+All stats are showing the constant component of the Legendre polynomials multiplied with the (from left to right) autocorrelations for the 0,1,2,3 Fourier terms, the crosscorrelation betweeon 0 and 1 Fourier term, and the crosscorrelation between the 0 and 2 Fourier term.  Note the bands in the lower left of the left 2 images.  A zoomed in picture of that section is below.
+
+![Example statistics](/MIC-Active-Nematics-Torus/img/post6/Stats_2.png) 
 #Example PCA
 
-Below is an example PCA run on only a few images from each torus.  Think of this as a proof of concept.  Until we get everything ironed out, we don't want to "waste priority" on PACE by constantly requesting lots of RAM. Even though there is something fishy going on with the Fourier basis, we still see some separation between some of the super negative Gaussian curvature bins and the rest of the bins. Whether or not this will persist once we've debugged everything remains to be seen.
+Below is an example PCA run on only a few images from each torus.  Think of this as a proof of concept.  Until we get everything ironed out, we don't want to "waste priority" on PACE by constantly requesting lots of RAM. Even though there is something fishy going on with the Fourier basis, we still see some separation between some of the very negative Gaussian curvature bins and the rest of the bins. Whether or not this will persist once we've debugged everything remains to be seen.
 
-![Example PCA](/MIC-Active-Nematics-Torus/img/post5/Final.png) 
+Screenshot highlighting PCA component 1 versus PCA component 2 below.
+
+![Example PCA](/MIC-Active-Nematics-Torus/img/post6/PCA_1.png) 
+
+Screenshot highlighting PCA component 1 versus PCA component 3 below.
+
+![Example PCA](/MIC-Active-Nematics-Torus/img/post6/PCA_2.png)
+
+Screenshot highlighting PCA component 2 versus PCA component 3 below.
+
+![Example PCA](/MIC-Active-Nematics-Torus/img/post6/PCA_3.png)
 
 # Miscellaneous notes
 
