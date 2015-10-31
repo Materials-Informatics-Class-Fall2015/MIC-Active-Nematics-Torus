@@ -41,7 +41,7 @@ Next, we solve for the Gaussian curvature everywhere and split each image into "
 
 
 ## What has changed for these steps since the presentation? 
-We have changed the unwrapping process to use MATLAB code instead of Python. This is purely a style choice as I'm much better in MATLAB and I didn't have the time to properly debug the unwrapping function in Python (we were having problems for toroids with large Gaussian curvatures). In addition, we scaled all of the images so that every image has 1 px = 2 microns, regardless of the torus size or region shown. This makes the sampling easier. Below I show some mask images demonstrating the unwrapping and rescaling process for some mask images from a torus with large Gauusian curvature.
+We have changed the unwrapping process to use MATLAB code instead of Python. This is purely a style choice as I'm much better in MATLAB and I didn't have the time to properly debug the unwrapping function in Python (we were having problems for toroids with large Gaussian curvatures). In addition, we scaled all of the images so that every image has 1 px = 2 microns, regardless of the torus size or region shown. This makes the sampling easier. Below I show some mask images demonstrating the unwrapping and rescaling process for some mask images from a torus with large Gaussian curvature.
 
 ![Example to show image binning](/MIC-Active-Nematics-Torus/img/post5/Final.png)
 
