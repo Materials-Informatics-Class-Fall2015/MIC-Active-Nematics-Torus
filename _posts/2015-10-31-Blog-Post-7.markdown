@@ -1,0 +1,31 @@
+---
+layout:     post
+title:      Update 6 - Continuous Bases
+date:       2015-11-13 12:00:00
+author:     Perry Ellis
+tags: 	
+---
+
+<!-- Start Writing Below in Markdown -->
+
+# What is this post?
+This will cover how I determine the number of componenets to use when representing my microstructure using a continuous basis function  (rather than just the primative basis)
+
+# Our bases
+We use both the Legendre polynomials (to represent the degree of alignment) and a Fourier series.  The Legendre polynomial basis is already implremented in PyMKS. The Fourier basis is not yet integrated into the distributed PyMKS, but I have the most updated version (written by David) to use for my data.
+The 
+
+
+![Example PCA](/MIC-Active-Nematics-Torus/img/post6/PCA_3.PNG)
+
+
+
+
+
+
+
+
+
+
+
+
