@@ -28,7 +28,8 @@ Physically, we interpret this space in terms of the spatial frequencies of the o
 
 This can also be seen when looking at the average value and standard deviation for some Fourier terms for the example image.
 
-State # | Fouier Term | Average | Standard Deviation
+|State # | Fouier Term | Average | Standard Deviation|
+|:-----:|:-----:|:-----:|:-----:|
 | 1 |0| 1.00 | 0.00 |
 | 2 |1| 0.56 | 0.83 |
 | 3 |-1| 0.56 | 0.83 |
