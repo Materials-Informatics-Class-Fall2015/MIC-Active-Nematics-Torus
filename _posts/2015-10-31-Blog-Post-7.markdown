@@ -17,13 +17,14 @@ The data are discretized such that $$ \frac{1}{\Delta} \integral_s m(h,x) dx = \
 
 Note that for N states, the Legendre polynomials have $$l$$ range from $$0$$ to $$N-1$$ while for the Fourier series $$l$$ ranges from $$-(N-1)/2$$ to $$(N-1)/2$$.
 
-# How many Legendre polynomials do we need? 
+# How many terms in the Fourier series do we need? 
+First, let's take a look at the data in terms of the values for the different terms in the Fourier series. Starting in the upper left corner from from left to right we have the data as represented in the space of the  0th, 1st, 2nd, 2rd, 4th, and 5th positive Fourier component. Only ther real part is shown. The corresponding negative components have the same real part and so they are not shown. Note that the colorbar is accurate for all but the 0th component. That value is actually $$1$$, not $$0$$ as the color would have you believe. I have checked this independently - it is a visual error due to the way I'm plotting and I haven't changed it because I'm having some trouble getting matplotlib to do as I say.
 
+![Example PCA](/MIC-Active-Nematics-Torus/img/post7/FourierBasis_Comps012345.PNG)
 
-![Example PCA](/MIC-Active-Nematics-Torus/img/post6/PCA_3.PNG)
+Physically, we interpret this space in terms of the spatial frequencies of the orientation data. This means that the 1st component is periodic on $$[0,180]$$ degrees, the 2nd component is periodic on $$[0,90]$$ degrees, the 4th component is periodic on $$[0,45]$$ degrees, etc.  Simply by looking at the data it's not obvious how many terms to keep. This also holds true when looking at even higher order terms.  Below are the real parts of the 6th, 7th, 8th, 9th, 10th, and 11th posititive Fourier components (again from left to right, starting at the upper left corner of the image).
 
-
-
+![Example PCA](/MIC-Active-Nematics-Torus/img/post7/FourierBasis_Comps67891011.PNG)
 
 
 
