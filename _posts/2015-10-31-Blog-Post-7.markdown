@@ -28,18 +28,18 @@ Physically, we interpret this space in terms of the spatial frequencies of the o
 
 This can also be seen when looking at the average value and standard deviation for some Fourier terms for the example image.
 
-State # | Fouier Term | Average | Standard Deviation|
-|: 1 |:0:|: 1.00 :|: 0.00 :|
-|: 2 |:1:|: 0.56 :|: 0.83 :|
-|: 3 |:-1:|: 0.56 :|: 0.83 :|
-|: 4 |:2:|: 0.18 :|: 0.98 :|
-|: 5 |:-2:|: 0.18 :|: 0.98 :|
-|: 6 |:3:|: 0.28 :|: 0.96 :|
-|: 7 |:-3:|: 0.28 :|: 0.96 :|
-|: 8 |:4:|: 0.10 :|: 1.00 :|
-|: 9 |:-4:|: 0.10 :|: 1.00 :|
-|: 10 |:5:|: 0.22 :|: 0.98 :|
-|: 11 |:-5:|: 0.22 :|: 0.98 :|
+State # | Fouier Term | Average | Standard Deviation
+| 1 |0| 1.00 | 0.00 |
+| 2 |1| 0.56 | 0.83 |
+| 3 |-1| 0.56 | 0.83 |
+| 4 |2| 0.18 | 0.98 |
+| 5 |-2| 0.18 | 0.98 |
+| 6 |3| 0.28 | 0.96 |
+| 7 |-3| 0.28 | 0.96 |
+| 8 |4| 0.10 | 1.00 |
+| 9 |-4| 0.10 | 1.00 |
+| 10 |5| 0.22 | 0.98 |
+| 11 |-5| 0.22 | 0.98 |
 
 Apart from trying to reconstruct the original data from the fourier basis (which I'm not entirely certain how to do), we can also choose the number of states using the frequency arguement from earlier. From a sample image where the positive defects are pointed by the magenta triangles and the negative defects are pointed by the yellow asterisks, we can see that the spatial frequency needed to capture the spatial defect resolution would need a prohibitively high number of states.
 
