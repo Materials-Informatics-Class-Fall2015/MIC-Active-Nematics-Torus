@@ -35,7 +35,7 @@ Right away we can see that no single component captures more than 30% of the var
 | 11 | 0.307 | 0.465 | 0.569 | 0.649 | 0.705 |
 
 It's unfortunate that even with 10 componenets we are still capturing less than 90% of the variance. However, this does seem that there is no real reason to use more than 5 terms in the Fourier series. Just to confirm this, let's look at some PCA plots.
-<!--
+
 
 # PCA plots
 Just as a starter, recall that these are only for 3 images for each torus, so we aren't trying to say anything physical yet. All we're doing is looking at the structure of the data transformed into PCA space to confirm that we don't need to use more than 5 terms in the Fourier series.
@@ -47,6 +47,7 @@ Just as a starter, recall that these are only for 3 images for each torus, so we
 ![PCA 5 terms c1c3 ](/MIC-Active-Nematics-Torus/img/post8/pca_3ims_c1c3_f5.PNG)
 
 There seems to be some good clustering, but we can't say much until we look at the other PCA plots
+<!--
 
 ## 7 terms
 
@@ -75,4 +76,4 @@ When comparing the PCA plots for 7 terms with the ones for 11 terms above, there
 # In conclusion...
 We will use 7 Fourier terms as it seems to be the best balance of variance captured, structure/clustering in the PCA scores, and computation time/resources. 
 -->
-test here
+test 3
