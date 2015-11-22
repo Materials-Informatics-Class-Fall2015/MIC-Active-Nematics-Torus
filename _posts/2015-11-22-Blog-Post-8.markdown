@@ -75,5 +75,4 @@ When comparing the PCA plots for 7 terms with the ones for 11 terms above, there
 
 # In conclusion...
 We will use 7 Fourier terms as it seems to be the best balance of variance captured, structure/clustering in the PCA scores, and computation time/resources. 
-<!-- -->
-test 4
+
