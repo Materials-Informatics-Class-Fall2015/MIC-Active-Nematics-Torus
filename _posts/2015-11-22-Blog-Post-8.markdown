@@ -27,8 +27,8 @@ First we're going to look at a plot of captured variance for the first 10 PCA co
 Right away we can see that no single component captures more than 30% of the variance, regardless of the number of terms used in the Fourier series. In face, note that the captured variance decreases as the number of terms in the Fourier series increases. Just to check, we can look as the cumulative variance captured in the table below as a function of the number of PCA components included for different numbers of terms in the Fourier series.
 
 |# Fourier Terms | PCA components |  |  |  |  |
-|                | 2              |4 |6 |8 |10|
 |:--------------:|:--------------:|:--:|:--:|:--:|:--:|
+|                | 2              |4 |6 |8 |10|
 | 5 | 0.491 | 0.648 | 0.739 | 0.803 | 0.859 |
 | 7 | 0.400 | 0.555 | 0.654 | 0.731 | 0.789 |
 | 9 | 0.346 | 0.508 | 0.610 | 0.688 | 0.745 |
