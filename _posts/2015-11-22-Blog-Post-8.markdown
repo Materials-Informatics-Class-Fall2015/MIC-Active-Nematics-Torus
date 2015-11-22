@@ -47,7 +47,7 @@ Just as a starter, recall that these are only for 3 images for each torus, so we
 ![PCA 5 terms c1c3 ](/MIC-Active-Nematics-Torus/img/post8/pca_3ims_c1c3_f5.PNG)
 
 There seems to be some good clustering, but we can't say much until we look at the other PCA plots
-<!--
+
 
 ## 7 terms
 
@@ -75,5 +75,5 @@ When comparing the PCA plots for 7 terms with the ones for 11 terms above, there
 
 # In conclusion...
 We will use 7 Fourier terms as it seems to be the best balance of variance captured, structure/clustering in the PCA scores, and computation time/resources. 
--->
-test 3
+<!-- -->
+test 4
