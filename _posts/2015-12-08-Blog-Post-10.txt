@@ -128,11 +128,19 @@ First, looking at the PCA for the binned images, it's easy to see that all the d
 
 ![PCA full 7 terms c1c2 ](/MIC-Active-Nematics-Torus/img/post9/pca_f7_l3_c1c2.PNG)
 
-Even when we look at an individual bins and connect the points to highlight the time evolution we don't see any meaningful separattion. Bin 7 (0 to slighly positive Gaussian curvature) and PCA components 1-3 is shown below.
+Even when we look at an individual bins and connect the points to highlight the time evolution we don't see any meaningful separattion. Bin 7 (0 to slighly positive Gaussian curvature) and PCA components 1-3 is shown below. The rest of the tracks are found[here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/)
 
 ![tracks f5l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f5_l3.png)
 
-Here we are left with the conclusions that either (1) we don't have enough terms, (2) the spatial position doens't really matter, (3) there's no meaningful variation between samples, or (4) the linear dimnensionality reduction of PCA is unsuited for a nonlinear process like this one.
+Here we are left with the conclusions that either (1) we don't have enough terms in the Fourier series, (2) the spatial position doens't really matter, (3) there's no meaningful variation between samples, or (4) the linear dimnensionality reduction of PCA is unsuited for a nonlinear process like this one. Some of these concerns are addressed by looking at the results from the full, unbinned images. An example for the first 3 PCA components is below.
+
+ ![pca full f5 l3 c123](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_123.png)
+ 
+ The rest of the images can be found [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/). Note that there is some separation in the 1st three components, and that the structure for each torus seems to evolve in small regions of PCA space.
+ 
+ # Conclusions
+ 
+ We didn't have quite enough time to develop a model for the structure evolution this semester, but this project will continue into the Spring, so we still have more time. In addition, we would like to take a closer look at our binning process to see if we can be more conclusive if spatial position matters when determining the structure for this system. Overall, we have a good start in characterizing the time evolution of the structure of the active nematics, but more needs to be done to truly understand the physics at play.
 
 
 
