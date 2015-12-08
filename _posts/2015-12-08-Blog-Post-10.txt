@@ -1,0 +1,148 @@
+---
+layout:     post
+title:      Final Semester Post
+date:       2015-12-08 12:00:00
+author:     Perry Ellis
+tags: 	
+---
+
+<!-- Start Writing Below in Markdown -->
+
+
+
+![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.png)
+
+#Project Intro
+This project centers around the time evolution of an active nematic material on the surface of a torus. We define an active material as a material whose individual components have a source of internal energy that is converted into kinetic energy. Nematic materials are an ordered material composed of elongated units who share a preferred alignment direction. We refer to this direction as the director, **n**. In equilibruim with no external perturbation, a nematic material will have a uniformly aligned ground state; however, external influences such as confinement, applied fields, flow, etc can produce states with defects, or places where the **n** is undefined. A schematic of how a director is defined as well as director maps of two differnt defect types can be seen in the figure from the [Introduction Post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/09/Blog-Post-1/) can be seen below.
+
+![Figure1 - 2D nematics](/MIC-Active-Nematics-Torus/img/post1/blog1_fig1.png)
+
+Active nematics present an interesting way to examine ordered materials that are constantly driven out-of-equilibrium.  A snapshot of an active nematic can be seen in the figure above. Note the large number of $$+ 1/2$$ and $$- 1/2$$ defects in the sample.  This is due to activity-induced flow distorting the preferred uniform ground state. More about the specific active nematic system we use and some of its fundamental science applications can be found [here](http://www.nature.com/nature/journal/v491/n7424/full/nature11591.html) and [here](http://www.sciencemag.org/content/345/6201/1135). Specifically, we wish to look at active nematics on the surface of a torus; there are many connections between equilibrium nematics and topology/curvature. For example, [this study](http://www.nature.com/nphys/journal/v7/n5/full/nphys1920.html) looking at equilibrium spherical nematic shells and [this study](http://www.pnas.org/content/110/23/9295) looking at bulk equilibrium nematic toroids. As seen [here]((http://www.sciencemag.org/content/345/6201/1135)), active nematic spheres have been studied and a correspondence was found between the active case and the equilibrium case. We hope that studying active nematics on a torus will lead to insights not only concenrning the equilibrium ground state of a nematic on a torus, but will also lead to insights in non-equilibrium physics.
+
+To do this, we start with the goal of characterizing the time-evolution of the structure of the active nematic on the surface of a torus.
+
+## The Dataset
+Our data are collected with a confocal microscope; thus, we have intensity data in a 3-D (x,y,z) array.  Below left is a scan of an example array through the z-direction, and below right is a video rotating the array to show that we do have a nematic on the surface of a torus.
+
+
+<!-- Here is a table with some videos-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>z-stack</b>
+			</p>
+		</td>				
+		<td width="50%" align="center">
+			<p>
+			<b>reconstructed image</b>
+			</p>
+		</td>				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.webm" type="video/webm">
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>				
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm">
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>				
+	</tr>
+</table>
+
+
+Both of these images come from the same dataset - it is a single image in time of a single torus.  For the time-evolution data, we are going to project the data along the z-axis to form a 2-D image (x,y). A video of the time evolution of such a projection for a small portion of the the torus is below.
+
+<!-- Here is a table with some videos-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>example active nematic data</b>
+			</p>
+		</td>				
+				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.mp4" type="video/mp4"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.webm" type="video/webm"/>
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>							
+	</tr>
+</table>
+
+The above video is one of the datasets we wish to charaacterize. We have 2 other videos like the above video, but for different toroids with different sizes and aspect ratios. More info can be found in the [Introduction Post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/09/Blog-Post-1/).
+
+# Cleaning the images
+To track the time-evolution of the structure, we first need a way to characterize the structure. We do this using the tensor nematic order parameter ***Q***, as defined in [this post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/21/Blog-Post-2/). Since ***Q*** is a tensor, we need 2 quantities to define the structure at every point. We will use the **n** as defined earlier and "S", the degree of alignment. A more in-depth description as well as our methodology for determining **n** and "S" from the raw data can be found in [this post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/25/Blog-Post-3/). Once the images are clean, we have an **n** image and an "S" image for each raw data image, as seen in the example below:
+
+![Example to show data projection to nematic order parameter](/MIC-Active-Nematics-Torus/img/post5/Start.png)
+
+The **n** image shows the orientation of the director on the interval [0 degrees, 180 degrees] measured clockwise off of the horizontal axis.  The "S" image holds the degree of alignment and can take values from [0,1]. 
+
+The next step to cleaning the images is to unwrap them; since we have projected a curved surface in 3-D to a flat 2-D plane, distance is no accurately represented in the projections. This will be a problem for computing statistics. Thus, we will "unwrap" our projected images such that the area on the surface of the torus is preserved in the 2-D plane. An example unwrapping can be seen in the below image. 
+
+![Example to show unwrapping](/MIC-Active-Nematics-Torus/img/post5/Unwrap_1.png)
+
+The highlighed contours and colored endpoints correspond to each other. Note how even though we've unwrapped one curvature, we haven't yet projected length properly. The schematic above just serves as a useful graphic to demonstrate part of the unwrapping process. Our final process rescales the unwrapped image to properly represent data, as seen below for a series of binary mask images.
+
+![Example to show image binning](/MIC-Active-Nematics-Torus/img/post5/Final.png)
+
+More about the unwrapping process can be found [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/10/31/Blog-Post-5/).
+
+# Workflow
+Now that our images are clean, we need to construct a processing pipeline to characterize the time evolution of the structure. This pipeline can be seen [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/28/Blog-Post-4/). In short, it reads something like: Clean images -> statistics -> dimensionality reduction via PCA -> model.
+
+
+# Challenges
+We spent a large part of this semester trying to work out some of the issues with the pipeline. Specifically, we got hung up on:
+
+## What should we look at?
+Unlike many systems that have already been treated with PyMKS and MatIN, we believe that spatial position in the sample matters. One of the defining features of a tirus is the fact that the [Gaussian curvature](http://mathworld.wolfram.com/GaussianCurvature.html) varies from politive along the outer ring of the torus to negative along the inner ring of the torus. As curvature has been shown to have an effect on ordered materials ([especially nematic ordered materials](http://pubs.rsc.org/en/Content/ArticleLanding/2014/SM/c4sm00076e#!divAbstract)), we expect that the position of the nematic on the turs will affect its structure.  To deal with this without keeping independent statistics for every point, we decided to try and bin the images by their Gaussian curvature - in this way we should be able to see if different bins have different structure. More on the binning can be found [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/10/31/Blog-Post-5/).
+
+One of the issues with this approach is that the bins can be small; since the size of the statistics images passed to PCA must be the same, we are limited by our smallest bin.  As this could cause problems, we will also try analyzing the whole torus (as if spatial position is irrelevant) as a comparison. See [post 9](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/) for more details concenring the unbinned stats.  
+
+## Implementing the Fourier Basis
+Another unique aspect of this system is that **n** is periodic, which requires a periodic basis function to accurately represent. We use the Fourier series, defined [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/11/13/Blog-Post-7/) to discretize **n**.  Examples of oiur data properly discretized can be seen [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/11/13/Blog-Post-7/).
+
+## How many terms in the Fourier Series should we use?
+Apart from the challenges of implementing the Fourier series (see [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/10/31/Blog-Post-6/) for an early attempt where the implementation of the Fourier series was still wrong), there is the cahllange of determining the optimal number of components in the Fourier series to use to best represent the microstructure. From a resources standpoint, anything more than 9 terms in the Fourier series is is too large for even the PACE cluster to handle. However, as seen in the plot below of variance by PCA component for different numbers of terms in the Fourier series, the data aren't very well represented with only 9 Fourier components.
+
+![Captured variance](/MIC-Active-Nematics-Torus/img/post8/Variance_plot.PNG)
+
+The above plot was run on a small subset of images, so we were able to look at 11 terms in the Fourier series.  When running on all the data we have issues with anything more than 9 terms. More on this issue can be found in these two posts [(1)](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/11/13/Blog-Post-7/) [(2)](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/11/22/Blog-Post-8/).  This is still an ongoing issue, but we decided to run PCA on what we could just to see if we were able to get meaningful results even if the captured variance is low.
+
+
+# Preliminary results
+First, looking at the PCA for the binned images, it's easy to see that all the data are clustered together in a big mass. All the images can be found [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/), but an example image for PCA components 1 and 2 is seen below.
+
+![PCA full 7 terms c1c2 ](/MIC-Active-Nematics-Torus/img/post9/pca_f7_l3_c1c2.PNG)
+
+Even when we look at an individual bins and connect the points to highlight the time evolution we don't see any meaningful separattion. Bin 7 (0 to slighly positive Gaussian curvature) and PCA components 1-3 is shown below. The rest of the tracks are found[here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/)
+
+![tracks f5l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f5_l3.png)
+
+Here we are left with the conclusions that either (1) we don't have enough terms in the Fourier series, (2) the spatial position doens't really matter, (3) there's no meaningful variation between samples, or (4) the linear dimnensionality reduction of PCA is unsuited for a nonlinear process like this one. Some of these concerns are addressed by looking at the results from the full, unbinned images. An example for the first 3 PCA components is below.
+
+ ![pca full f5 l3 c123](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_123.png)
+ 
+ The rest of the images can be found [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/). Note that there is some separation in the 1st three components, and that the structure for each torus seems to evolve in small regions of PCA space.
+ 
+ # Conclusions
+ 
+ We didn't have quite enough time to develop a model for the structure evolution this semester, but this project will continue into the Spring, so we still have more time. In addition, we would like to take a closer look at our binning process to see if we can be more conclusive if spatial position matters when determining the structure for this system. Overall, we have a good start in characterizing the time evolution of the structure of the active nematics, but more needs to be done to truly understand the physics at play.
+
+
+
+
+
