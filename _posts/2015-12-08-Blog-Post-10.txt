@@ -13,12 +13,92 @@ tags:
 ![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.png)
 
 #Project Intro
+This project centers around the time evolution of an active nematic material on the surface of a torus. We define an active material as a material whose individual components have a source of internal energy that is converted into kinetic energy. Nematic materials are an ordered material composed of elongated units who share a preferred alignment direction. We refer to this direction as the director, **n**. In equilibruim with no external perturbation, a nematic material will have a uniformly aligned ground state; however, external influences such as confinement, applied fields, flow, etc can produce states with defects, or places where the **n** is undefined. A schematic of how a director is defined as well as director maps of two differnt defect types can be seen in the figure from the [Introduction Post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/09/Blog-Post-1/) can be seen below.
 
+![Figure1 - 2D nematics](/MIC-Active-Nematics-Torus/img/post1/blog1_fig1.png)
+
+Active nematics present an interesting way to examine ordered materials that are constantly driven out-of-equilibrium.  A snapshot of an active nematic can be seen in the figure above. Note the large number of $$+ 1/2$$ and $$- 1/2$$ defects in the sample.  This is due to activity-induced flow distorting the preferred uniform ground state. More about the specific active nematic system we use and some of its fundamental science applications can be found [here](http://www.nature.com/nature/journal/v491/n7424/full/nature11591.html) and [here](http://www.sciencemag.org/content/345/6201/1135). Specifically, we wish to look at active nematics on the surface of a torus; there are many connections between equilibrium nematics and topology/curvature. For example, [this study](http://www.nature.com/nphys/journal/v7/n5/full/nphys1920.html) looking at equilibrium spherical nematic shells and [this study](http://www.pnas.org/content/110/23/9295) looking at bulk equilibrium nematic toroids. As seen [here]((http://www.sciencemag.org/content/345/6201/1135)), active nematic spheres have been studied and a correspondence was found between the active case and the equilibrium case. We hope that studying active nematics on a torus will lead to insights not only concenrning the equilibrium ground state of a nematic on a torus, but will also lead to insights in non-equilibrium physics.
+
+To do this, we start with the goal of characterizing the time-evolution of the structure of the active nematic on the surface of a torus.
 
 ## The Dataset
+Our data are collected with a confocal microscope; thus, we have intensity data in a 3-D (x,y,z) array.  Below left is a scan of an example array through the z-direction, and below right is a video rotating the array to show that we do have a nematic on the surface of a torus.
 
+
+<!-- Here is a table with some videos-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>z-stack</b>
+			</p>
+		</td>				
+		<td width="50%" align="center">
+			<p>
+			<b>reconstructed image</b>
+			</p>
+		</td>				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/zstack_scan.webm" type="video/webm">
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>				
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.mp4" type="video/mp4">
+				<source src="/MIC-Active-Nematics-Torus/img/post1/surface_reorient.webm" type="video/webm">
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>				
+	</tr>
+</table>
+
+
+Both of these images come from the same dataset - it is a single image in time of a single torus.  For the time-evolution data, we are going to project the data along the z-axis to form a 2-D image (x,y). A video of the time evolution of such a projection for a small portion of the the torus is below.
+
+<!-- Here is a table with some videos-->
+<table border="0" cellspacing="0" width = "100%" cellpadding="0"  frame="void" rules="void" align = "center">
+	<tr>
+		<td width="50%" align="center">
+			<p	>
+			<b>example active nematic data</b>
+			</p>
+		</td>				
+				
+	</tr>
+	<tr>
+		<td width="50%" align="center">
+			<video height="330" id="video" controls='controls'>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.mp4" type="video/mp4"/>
+				<source src="/MIC-Active-Nematics-Torus/img/post1/tube_vid.webm" type="video/webm"/>
+				Your browser doesn't seem to support the video tag.
+			</video>
+		</td>							
+	</tr>
+</table>
+
+The above video is one of the datasets we wish to charaacterize. We have 2 other videos like the above video, but for different toroids with different sizes and aspect ratios. More info can be found in the [Introduction Post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/09/Blog-Post-1/).
 
 # Cleaning the images
+To track the time-evolution of the structure, we first need a way to characterize the structure. We do this using the tensor nematic order parameter ***Q***, as defined in [this post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/21/Blog-Post-2/). Since ***Q*** is a tensor, we need 2 quantities to define the structure at every point. We will use the **n** as defined earlier and "S", the degree of alignment. A more in-depth description as well as our methodology for determining **n** and "S" from the raw data can be found in [this post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/25/Blog-Post-3/). Once the images are clean, we have an **n** image and an "S" image for each raw data image, as seen in the example below:
+
+![Example to show data projection to nematic order parameter](/MIC-Active-Nematics-Torus/img/post5/Start.png)
+
+The **n** image shows the orientation of the director on the interval [0 degrees, 180 degrees] measured clockwise off of the horizontal axis.  The "S" image holds the degree of alignment and can take values from [0,1]. 
+
+The next step to cleaning the images is to unwrap them; since we have projected a curved surface in 3-D to a flat 2-D plane, distance is no accurately represented in the projections. This will be a problem for computing statistics. Thus, we will "unwrap" our projected images such that the area on the surface of the torus is preserved in the 2-D plane. An example unwrapping can be seen in the below image. 
+
+![Example to show unwrapping](/MIC-Active-Nematics-Torus/img/post5/Unwrap_1.png)
+
+The highlighed contours and colored endpoints correspond to each other. Note how even though we've unwrapped one curvature, we haven't yet projected length properly. The schematic above just serves as a useful graphic to demonstrate part of the unwrapping process. Our final process rescales the unwrapped image to properly represent data, as seen below for a series of binary mask images.
+
+![Example to show image binning](/MIC-Active-Nematics-Torus/img/post5/Final.png)
+
+
 
 # Challenges
 
