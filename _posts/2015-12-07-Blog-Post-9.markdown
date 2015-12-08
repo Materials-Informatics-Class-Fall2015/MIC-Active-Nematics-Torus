@@ -28,19 +28,19 @@ Note how it's hard to pick out any trends or clustering. To try and see if the m
 # Some tracks
 We will show tracks from bin 2 (large negative Gaussian curvature), bin 7 (0 to slighly positive Gaussian curvature), and bin 10 (positive Gaussian curvature). The points are connected to show the time evolution. First, we look at tracks for 5 terms in the Fourier series and 3 terms in the Legendre Polynomials.
 
-![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.PNG)
+![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.png)
  
-![tracks f5l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f5_l3.PNG)
+![tracks f5l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f5_l3.png)
  
-![tracks f5l3 bin 10](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_10_f5_l3.PNG)
+![tracks f5l3 bin 10](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_10_f5_l3.png)
  
  While there is a definite time evolution, the trajectories in PCA space seem to wind and cluster around the same point. In addition, the tracks from different toroids overlap and intertwine. As we were noticing more clustering/structure in PCA with more Fourier terms, let's look at tracks for 9 terms in the Fourier series and 3 terms in the Legendre Polynomials.
  
-![tracks f9l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f9_l3.PNG)
+![tracks f9l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f9_l3.png)
  
-![tracks f9l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f9_l3.PNG)
+![tracks f9l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f9_l3.png)
  
-![tracks f9l3 bin 10](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_10_f9_l3.PNG)
+![tracks f9l3 bin 10](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_10_f9_l3.png)
 
 As with 5 components, the tracks between different toroids aren't really distinguishable and wrap on the same area of PCA space multiple times. This seems to imply that the structure is evolving in PCA space around the same state (or set of states) such that any differentiation is washed out.  It could also be a reflection that PCA is inherenly unsuited to a nonlinear process like this one. Finally, it could simply be that our bins aren't physically big enough to have meaningful statistics.  Recall that the size of the data for each bin passed to PCA has to be the same size, which means that we are limited by our smallest bin - the other bins get truncated to match the size of the smallest bin.  As a test of this, let's just do stats and PCA on each whole individual torus.
 
@@ -64,19 +64,19 @@ For the autocorrelation of the 0th Legendre term and the autocorrelation of the 
  Below are 3 component plots for the full time evolution of three toroids in PCA space for 5 terms in the Fourier series and 3 terms in the Legendre Polynomials. I ran the data for 15 components:
  
  Components 1 - 3:
- ![pca full f5 l3 c123](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_123.PNG)
+ ![pca full f5 l3 c123](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_123.png)
  
   Components 4 - 6:
- ![pca full f5 l3 c456](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_456.PNG)
+ ![pca full f5 l3 c456](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_456.png)
  
   Components 7 - 9:
- ![pca full f5 l3 c789](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_789.PNG)
+ ![pca full f5 l3 c789](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_789.png)
  
   Components 10 - 12:
- ![pca full f5 l3 c101112](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_101112.PNG)
+ ![pca full f5 l3 c101112](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_101112.png)
  
   Components 13 - 15:
- ![pca full f5 l3 c131415](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_131415.PNG)
+ ![pca full f5 l3 c131415](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_131415.png)
  
  Note how the plot for components 1 - 3 show good separation, but for higher components the tracks for all three toroids wind around and through the same local area in PCA space. Torus 2 seems to span a larger range of the space, but that seems to be the only real difference my eye can pick out for the higher components. While the semester is rapidly coming to a close, this project will not end - the next thing to do will be to see if the trajectory through PCA space for a full torus can be prediced with some type of auroregressive model.  Alternate dimensionality reduction and binning strategies will also be explored.
 
