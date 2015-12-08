@@ -1,0 +1,24 @@
+---
+layout:     post
+title:      Final Semester Post
+date:       2015-12-08 12:00:00
+author:     Perry Ellis
+tags: 	
+---
+
+<!-- Start Writing Below in Markdown -->
+
+# What is this post?
+This is the final 
+
+
+
+
+![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.png)
+ 
+![tracks f5l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f5_l3.png)
+ 
+![tracks f5l3 bin 10](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_10_f5_l3.png)
+ 
+
+
