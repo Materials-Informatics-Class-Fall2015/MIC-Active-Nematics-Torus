@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      Update 7 - Continuous Bases pt 2
-date:       2015-11-22 12:00:00
+title:      Update 8 - Tracks
+date:       2015-12-07 12:00:00
 author:     Perry Ellis
 tags: 	
 ---
@@ -9,12 +9,13 @@ tags:
 <!-- Start Writing Below in Markdown -->
 
 # What is this post?
-This will cover how I determine the number of componenets to use when representing part of my microstructure using the Fourier basis
+This will deal with visualizing the time evolution of the microstructure.
 
-# Where are we with the Fourier basis?
-Recall from last post that the data are discretized such that $$ \frac{1}{\Delta} \int_s m(h,x) dx = \sum_l m[l,s] \zeta_l (h) $$, where $$m$$, $$h$$, $$s$$, and $$x$$ are the ususal variables to represent the microstate probability, the microstate itself, the discrete spatial bin, and the continuous spatial position, respectively. Here, $$l$$ represents the discrete local state, and $$\zeta_l(h)$$ is the appropriate orthogonal basis function. For the orientation, we use a Fourier series, $$ \zeta_l (h) = \exp(i\frac{2 \pi l h}{P})$$, where P is the periodicity of the data. In our case, P is $$\pi$$.
+# A giant mass of PCA 
+First we will look at the PCA for all the images we have where the images have been binned by the Gaussian curvature of the substrate. For 7 terms in the Fourier series and 3 terms in the Legendre polynomials, we have:
 
-Note that for N states, the Fourier series $$l$$ ranges from $$-(N-1)/2$$ to $$(N-1)/2$$. Also from last time, recall that there was no obvious way to determine the optimal number of terms in the Fourier series; we finished with the conclusion that we would determine the number of terms in the Fourier series empirically. We will do this by computing stats/PCA on a small subset of images and looking at the captured variance for the first 10 components.
+![PCA full 7 terms c1c2 ](/MIC-Active-Nematics-Torus/img/post8/pca_3ims_c1c2_f5.PNG)
+
 
 # Limitations of this approach
 Since we're not running this on PACE, we're limited to a very small subset of images (3 images for each of the 3 toroids ... 9 images total). In addition, we can't really look at more than 13 terms in the Fourier series. Anything else starts to run up against the amount of memory on the computer. While in principal we could get a better estimate of the optimal number of terms using more images, we should still be able to get an idea of how many terms we need. Basically, we're relying on the fact that the most variance we have is going to come from the differences between the 3 toroids and not from the time-series images for a single toroid.
