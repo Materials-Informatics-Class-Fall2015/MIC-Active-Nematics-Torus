@@ -8,17 +8,50 @@ tags:
 
 <!-- Start Writing Below in Markdown -->
 
-# What is this post?
-This is the final 
-
-
 
 
 ![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.png)
- 
-![tracks f5l3 bin 7](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_7_f5_l3.png)
- 
-![tracks f5l3 bin 10](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_10_f5_l3.png)
- 
+
+#Project Intro
+
+
+## The Dataset
+
+
+# Cleaning the images
+
+# Challenges
+
+
+## What should we look at?
+
+
+## Implementing the Fourier Basis
+
+
+## How many terms in the Fourier Series should we use?
+
+
+
+# Preliminary results
+
+
+
+Story is this:
+Active nematics present an interesting way to examine ordered materials that are out-of-equilibrium. Nematics are blah, active are blah. what does this mean?  Can we predict trajectories?  Why does anybody care?
+
+Link to dataset posts.
+
+Motivate cleaning with microstructure function and need to  properly resolve distance
+
+How do we do statistics in a reasonable matter when spatial position could matter?
+
+Need for Fourier basis to resolve periodic structure and how we implemented it
+
+How many terms do we need as we seem to capture little variation
+
+Prelim results. Can resolve differnet toroids in the 1st three components. Next will try manually reducing the dimensions and using nonlinear dimensionality reduction.
+
+
 
 
