@@ -1,0 +1,71 @@
+---
+layout:     post
+title:      Final Presentation Slides
+date:       2015-12-10 12:00:00
+author:     Perry Ellis
+tags: 	
+---
+
+<!-- Start Writing Below in Markdown -->
+
+# What is this post?
+This has images of each slide I use in my final presentation. Videos will not play (as I'm only showing images here)
+
+# Acknowledgements
+I'd like to thank Ahmet Cecen for all the project pages help; the professor, Dr. Surya Kalidindi for teching the class and always being availible to meet; and especially David Brough for being a great mentor. Without David I would have accomplished very little this semester.
+
+# The Presentation
+
+![Slide 1](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-01.png)
+
+![Slide 2](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-02.png)
+
+![Slide 3](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-03.png)
+
+![Slide 4](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-04.png)
+
+![Slide 5](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-05.png)
+
+![Slide 6](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-06.png)
+
+![Slide 7](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-07.png)
+
+![Slide 8](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-08.png)
+
+![Slide 9](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-09.png)
+
+![Slide 10](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-10.png)
+
+![Slide 11](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-11.png)
+
+![Slide 12](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-12.png)
+
+![Slide 13](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-13.png)
+
+![Slide 14](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-14.png)
+
+![Slide 15](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-15.png)
+
+![Slide 16](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-16.png)
+
+![Slide 17](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-17.png)
+
+![Slide 18](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-18.png)
+
+![Slide 19](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-19.png)
+
+![Slide 20](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-20.png)
+
+![Slide 21](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-21.png)
+
+![Slide 22](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-22.png)
+
+![Slide 23](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-23.png)
+
+![Slide 24](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-24.png)
+
+![Slide 25](/MIC-Active-Nematics-Torus/img/post11/PWE_ME8883_Final Presentation-25.png)
+
+
+
+
