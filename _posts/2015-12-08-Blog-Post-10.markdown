@@ -8,10 +8,6 @@ tags:
 
 <!-- Start Writing Below in Markdown -->
 
-
-
-![tracks f5l3 bin 2](/MIC-Active-Nematics-Torus/img/post9/bin_tracks_2_f5_l3.png)
-
 #Project Intro
 This project centers around the time evolution of an active nematic material on the surface of a torus. We define an active material as a material whose individual components have a source of internal energy that is converted into kinetic energy. Nematic materials are an ordered material composed of elongated units who share a preferred alignment direction. We refer to this direction as the director, **n**. In equilibruim with no external perturbation, a nematic material will have a uniformly aligned ground state; however, external influences such as confinement, applied fields, flow, etc can produce states with defects, or places where the **n** is undefined. A schematic of how a director is defined as well as director maps of two differnt defect types can be seen in the figure from the [Introduction Post](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/09/09/Blog-Post-1/) can be seen below.
 
@@ -134,11 +130,11 @@ Even when we look at an individual bins and connect the points to highlight the 
 
 Here we are left with the conclusions that either (1) we don't have enough terms in the Fourier series, (2) the spatial position doens't really matter, (3) there's no meaningful variation between samples, or (4) the linear dimnensionality reduction of PCA is unsuited for a nonlinear process like this one. Some of these concerns are addressed by looking at the results from the full, unbinned images. An example for the first 3 PCA components is below.
 
- ![pca full f5 l3 c123](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_123.png)
+![pca full f5 l3 c123](/MIC-Active-Nematics-Torus/img/post9/PCA_All_f5_l3_123.png)
  
  The rest of the images can be found [here](http://materials-informatics-class-fall2015.github.io/MIC-Active-Nematics-Torus/2015/12/07/Blog-Post-9/). Note that there is some separation in the 1st three components, and that the structure for each torus seems to evolve in small regions of PCA space.
  
- # Conclusions
+# Conclusions
  
  We didn't have quite enough time to develop a model for the structure evolution this semester, but this project will continue into the Spring, so we still have more time. In addition, we would like to take a closer look at our binning process to see if we can be more conclusive if spatial position matters when determining the structure for this system. Overall, we have a good start in characterizing the time evolution of the structure of the active nematics, but more needs to be done to truly understand the physics at play.
 
